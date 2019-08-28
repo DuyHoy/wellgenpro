@@ -1,0 +1,36 @@
+/*****style for XS*****/
+.header-wrapper .logo{
+	padding-left: 0px;
+}
+#myCarousel .carousel-indicators{
+	width: 40%;
+}
+.content-wrapper .content-home{
+	overflow: hidden;
+	margin-left: -15px;
+}
+#myPartnerCarousel .item > div:last-child{
+	margin-left: -15px;
+}
+#myPartnerCarousel a.carousel-control{
+	top: 0px;
+}
+.devisionmargin{
+	margin-left: -15px;
+	margin-right: 0px;
+}
+.block-video iframe{
+	width: 100%;
+}
+#myPartnerCarousel{
+    margin-left: 0px;
+    margin-right: -15px;
+    margin-top: 15px;
+}
+#myPartnerCarousel .item > div{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.header-wrapper .logo{
+	padding-left: 0px;
+}

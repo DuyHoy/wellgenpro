@@ -1,0 +1,359 @@
+
+#center-section {
+    background: none repeat scroll 0 0 #f7f7f7;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+#content {
+	margin: 0 auto;
+	width: 86.7%;
+    padding: 30px 0;
+}
+
+.page-detail {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.pagedetailclass {
+    clear: both;
+    text-align: justify;
+}
+
+.pagedetailclass img {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%; 
+}
+
+h1, h2 {
+	color: #005e99;
+    /*font: 28px/35px Arial,sans-serif;*/
+    letter-spacing: -1px;
+    /*margin-bottom: 10px;*/
+    text-transform: capitalize;
+}
+
+/*.rightcontentclass li {
+	background: url('../image/list_marker.png') 0px 7px no-repeat;
+	padding-left: 5%;
+	margin-left: 0;
+}*/
+
+.rightcontentclass .biometric .imageclass, .rightcontentclass .biometric .div-right p, .rightcontentclass .biometric .div-right a.seemoreclass {
+	display: none;
+}
+
+.rightcontentclass .div-right h2
+{
+	font:bold 15px/22px Arial, sans-serif;
+	color:#666;
+	margin-top: 5px;
+	height: 22px;
+	overflow: hidden;
+}
+
+.rightcontentclass .div-right h2 a {
+	color: #666;
+}
+
+.rightcontentclass .div-right h2 a:hover {
+	color: #2b79cc;
+}
+
+.recentclass {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.recentclass  li
+{
+	float: left;
+    margin-left: 0;
+    margin-right: 2.6%;
+    position: relative;
+    width: 31.6% !important;
+}
+.recentclass li:nth-child(3n)
+{
+	margin-right:0px;
+}
+.recentclass li > h3
+{
+	font:bold 18px/22px Arial, sans-serif;
+	color:#666;
+	margin-top: 5px;
+	height: 22px;
+	overflow: hidden;
+}
+
+.recentclass li > h3 > a {
+	color: #666;
+}
+
+.recentclass li > h3 > a:hover {
+	color: #2b79cc;
+}
+
+.recentclass li .imageclass
+{
+	position: relative;
+	height: 206px;
+	width:100%;
+	float: left;
+	border: 5px solid #fff;
+	-webkit-box-sizing: border-box; /* Safari */
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	box-sizing: border-box;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin-top:17px;
+}
+.recentclass li .imageclass a
+{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	float: left;
+	clear: both;
+}
+.recentclass li .imageclass img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	max-height: 100%;
+	max-width: 100%;
+	margin: auto;
+}
+.recentclass li .imageclass:before
+{
+	position: absolute;
+	display: inline-block;
+	content: '';
+	width: 223px;
+	height: 159px;
+	left: -24px;
+	top: -21px;
+	background: url('../image/img_shadow1.png') no-repeat 0 0;
+	z-index: 0;
+}
+.recentclass li .imageclass:after
+{
+	position: absolute;
+	display: inline-block;
+	content: '';
+	width: 223px;
+	height: 159px;
+	right: -24px;
+	bottom: -21px;
+	background: url('../image/img_shadow2.png') no-repeat 0 0;
+	z-index: 0;
+}
+
+.recentclass .block {
+    float: left;
+    clear: both;
+    width: 100%;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.recentclass .block-detail {
+    height: 80px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.block a.seemoreclass {
+	display: none;
+}
+
+
+/********************************************************************************************************/
+
+.biometricclass {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.biometricclass ul {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.biometricclass li {
+    float: left;
+    margin-left: 0;
+    margin-right: 2.6%;
+    margin-bottom: 30px;
+    position: relative;
+    width: 31.6% !important;
+}
+.biometricclass li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.biometricclass .div-right {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+.biometricclass .div-right h2 {
+    color: #666;
+    font: bold 16px/20px Arial,sans-serif;
+    height: 20px;
+    margin-top: 13px;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+.biometricclass .div-right h2 > a {
+    color: #666;
+}
+.biometricclass .div-right h2 > a:hover {
+    color: #2b79cc;
+}
+.biometricclass li .imageclass {
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    float: left;
+    height: 206px;
+    margin-top: 17px;
+    position: relative;
+    width: 100%;
+}
+.biometricclass li .imageclass a {
+    clear: both;
+    float: left;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.biometricclass li .imageclass img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.biometricclass li .imageclass:before {
+    background: url("../image/img_shadow1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: -24px;
+    position: absolute;
+    top: -21px;
+    width: 100%;
+    z-index: 0;
+}
+.biometricclass li .imageclass:after {
+    background: url("../image/img_shadow2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: -21px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -24px;
+    width: 100%;
+    z-index: 0;
+}
+
+.biometricclass .div-right p {
+    float: left;
+    clear: both;
+    width: 100%;
+    text-align: justify;
+    height: 80px;
+    line-height: 20px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.biometricclass .div-right a.seemoreclass {
+    float: right;
+    margin-top: 10px;
+    width: 24%;
+}
+
+.biometricclass .div-right a.seemoreclass {
+    display: none;
+}
+@media all and (max-width: 1000px) and (min-width: 100px) {
+    .biometricclass .div-right a.seemoreclass {
+        float: right;
+        margin-top: 10px;
+        width: 30%;
+    }
+}
+
+.pageclass {
+    border: 1px solid #cecece;
+    padding: 0 3%;
+    background: #fff;
+    overflow: hidden;
+}
+
+
+/*.testimonial .div-right {
+    width: 84%;
+}*/
+
+.coursesclass .imageclass {
+    box-shadow: none !important;
+}
+.coursesclass .div-right p, .coursesclass .div-right a.seemoreclass {
+    display: none;
+}
+.contentpageclass {
+    padding-right: 0 !important;
+}
+
+.titlehomeclass {
+    background: none repeat scroll 0 0 #fc3030;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    left: 37%;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 145px;
+    width: 87px;
+    z-index: 1;
+}
+
+.page-detail .testimonial li .imageclass {
+    width: 100px;
+    height: 100px;
+}
+.page-detail .testimonial li .div-right {
+    width: 83%;
+}
+.page-detail .testimonial li .div-right p {
+    height: auto;
+}
+.page-detail .testimonial li .div-right h3 {
+    height: auto;
+    line-height: 26px;
+}
+/*****style content-home*****/
+.classvideo{
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #EBF1F5 none repeat scroll 0px 0px;
+}

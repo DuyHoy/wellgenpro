@@ -1,0 +1,59 @@
+
+body {
+  padding: 50px 0 0 0;
+}
+
+.navbar-toggle {
+  float: right;
+  margin-left: 15px;
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+	border : none !important;
+	background: #ddd;
+  position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+}
+/* CSS EDIT MENU */
+.navmenu {
+    background-color: #12B2F0;
+    color: white;
+}
+.navmenu-default .navmenu-nav > li > a, .navbar-default .navbar-offcanvas .navmenu-nav > li > a {
+    color: white  ;
+    border-bottom: 1px solid white;
+}
+.navmenu-brand {
+    background: black; 
+	color : white !important;
+}
+.navmenu-brand:hover {
+    background: black !important;
+	color : white !important;
+}
+.navmenu-brand:before {
+    content: "";
+    font-family: "Glyphicons Halflings";
+    margin-right: 10px;
+}
+a. dropdown-toggle {
+	color : black !important ;
+}
+.navmenu-default .navmenu-nav.dropdown-menu, .navbar-default .navbar-offcanvas .navmenu-nav.dropdown-menu {
+	background :#237cad;
+}
+

@@ -1,0 +1,215 @@
+body {
+
+    background: none repeat scroll 0 0 #EEEEEE;
+
+    font-family: arial;
+
+    min-height: 400px;
+
+    overflow: hidden;
+
+}
+
+.loginClass {
+
+    margin: 144px auto 0;
+
+    width: 400px;
+
+}
+
+.loginClass form {
+
+    background: none repeat scroll 0 0 #FFFFFF;
+
+    border: 1px solid #FFFFFF;
+
+    border-radius: 5px 5px 5px 5px;
+
+    overflow: hidden;
+
+    padding: 15px;
+
+}
+
+.loginClass p {
+
+    height: 50px;
+
+    padding-left: 20px;
+
+}
+
+.loginClass form div {
+
+    background: none repeat scroll 0 0 #EEEEEE;
+
+    border: 1px solid #CCCCCC; 
+
+    border-radius: 5px 5px 5px 5px;
+
+    overflow: hidden;
+
+    padding-bottom: 25px;
+
+    padding-top: 25px;
+
+}
+
+.loginClass p input { 
+
+    border: 1px solid #CCCCCC;
+
+    border-radius: 5px 5px 5px 5px;
+
+    float: right; 
+
+    margin-right: 26px;
+
+    padding: 2px;
+
+    width: 200px;
+
+}
+
+.loginClass p span {
+
+    float: left;
+
+}
+
+.loginClass form h2 {
+
+    background: none repeat scroll 0 0 #222222;
+
+    border-radius: 5px 5px 5px 5px;
+
+    color: #FFFFFF;
+
+    font-family: tahoma;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    height: 40px;
+
+    line-height: 40px;
+
+    margin-bottom: 10px;
+
+    padding-left: 10px;
+
+    text-align: center;
+
+}
+
+.loginClass form input[type="submit"] {
+
+    float: right;
+
+    margin-top: 10px;
+
+    border: 1px solid #cccccc;
+
+    padding: 3px 10px;
+
+    border-radius: 5px;
+
+    background: #F2F2F2;
+
+    color: black;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+}
+
+.error p {
+
+    background: url("../image/icon_error.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+
+    color: #FF0000;
+
+    font-size: 13px;
+
+    height: 37px;
+
+    line-height: 39px;
+
+    padding-left: 30px;
+
+}
+
+.error {
+
+    overflow: hidden; 
+
+    margin-bottom: 15px;
+
+}
+.resetpassclass {
+    font-size: 13px;  
+    color: green; 
+    line-height: 41px;
+    font-weight: bold;
+}
+.resetClass {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: white;
+    padding: 2%;
+    min-height: 300px;
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    line-height: 30px;
+}
+.resetClass form input[type="submit"] {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 3px 10px;
+}
+.resetClass h2 {
+    font-size: 18px;
+    text-align: left;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    background: url("../image/resetpass.png") no-repeat left center;
+}
+
+.resetClass p input {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+ 
+    margin-right: 26px; 
+    margin-left: 30px;
+    padding: 2px;
+    width: 200px;
+}
+.resetClass form div {
+    line-height: 45px;
+}
+.success p {
+    padding-left: 35px; 
+    margin-bottom: 30px; 
+    color: blue;
+    font-size: 15px; 
+    font-weight: bold;
+    background: url("../image/success.png") no-repeat left center;
+}
+.linkloginclass {
+    line-height: 45px; 
+    color: #1daff3;
+    padding-left: 10px;
+    text-decoration: underline;
+}

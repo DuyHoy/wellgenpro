@@ -1,0 +1,270 @@
+
+#center-section {
+    background: none repeat scroll 0 0 #f7f7f7;
+    float: left;
+    clear: both;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#content {
+    margin: 0 auto;
+    width: 86.7%;
+}
+
+h1, h2 {
+    color: #005e99;
+    /*font: 28px/35px Arial,sans-serif;
+    letter-spacing: -1px;
+    margin-top: 30px;
+    margin-bottom: 10px;*/
+    text-transform: capitalize; 
+}
+
+.div-contact {
+    float: left;
+    width: 100%;
+}
+.div-contact input{
+    border: 1px solid #DDDDDD;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 98%;
+}
+.div-contact textarea{
+    width: 98%;
+    height: 75px;
+    border: 1px solid #DDDDDD;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.div-contact p.captcha {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.div-contact p.captcha img#captcha {
+    float: left;
+    width: 45%;
+}
+
+.div-contact p.captcha input#code {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 33% !important;
+}
+
+@media all and (max-width: 1000px) and (min-width: 100px) {
+    .div-contact input#code {
+        float: right;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 25% !important;
+    }
+}
+
+.div-contact p.captcha img#refresh {
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    margin-top: 10px;
+    width: 30px;
+}
+
+.div-contact p.submit {
+    width: 100%;
+    text-align: center;
+}
+
+.div-contact p.submit input.submitfrom {
+    background: none repeat scroll 0 0 #005e99;
+    border: medium none;
+    color: #fff;
+    display: inline-block;
+    float: right;
+    font: bold 12px/20px Arial,sans-serif;
+    margin-top: -40px;
+    padding-left: 0;
+    position: absolute;
+    right: 4.2%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 6%;
+}
+
+@media all and (max-width: 1000px) and (min-width: 100px) {
+    .div-contact p.submit input.submitfrom {
+        background: none repeat scroll 0 0 #005e99;
+        border: medium none;
+        margin-top: -44px;
+        color: #fff;
+        display: inline-block;
+        float: right;
+        font: bold 12px/20px Arial,sans-serif;
+        left: 75%;
+        padding-left: 0;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        width: 5%;
+    }
+}
+
+.div-contact p.submit input.submitfrom:hover {
+    color: #005e99;
+    background: #fff;
+    cursor: pointer;
+}
+
+.div-contact input.inputError{
+    border: 1px solid red;
+}
+.div-contact .errorclass{
+    text-align: center;
+    margin-top: 15px;
+}
+.div-contact .errorclass span.success-class{
+    color: #00CC33;
+    font-weight: bold;
+}
+.div-contact .errorclass span.fail-class{
+    color: red;
+}
+
+
+.contact-info-class {
+    float: right;
+    width: 49%;
+    color: #333333;
+}
+
+/*.contact-info-class h4 {
+    font: 25px/40px Arial,sans-serif;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.contact-info-class table {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.contact-info-class table td {
+    line-height: 25px;
+}
+
+.contact-info-class p.titleclass {
+    border-bottom: 1px solid #dddddd;
+    color: #f58122 !important;
+    display: block;
+    font-size: 28px;
+    height: 16px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 40px 0 30px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.contact-info-class table td:nth-child(2n-1) {
+    width: 14%;
+    vertical-align: top;
+}
+
+@media all and (max-width: 1200px) and (min-width: 100px) {
+    .contact-info-class {
+        clear: both;
+        float: left;
+        position: absolute;
+        width: 64%;
+        color: #333333;
+    }
+
+    .contact-info-class table td:nth-child(2n-1) {
+        width: 20%;
+        vertical-align: top;
+    }
+}*/
+
+#map{
+    width: 100%;
+    height: 255px;
+    float: right;
+    margin-top: 10px;
+}
+
+input#code {
+    float: right;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+#refresh {
+    margin-bottom: 12px;
+    margin-left: 5%;
+}
+
+.div-contact p {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.footer-col-3 {
+    margin-left: 0;
+}
+
+.titlehomeclass {
+    background: none repeat scroll 0 0 #fc3030;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    left: 37%;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 140px;
+    width: 87px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px)  {
+
+    #formcontact {
+        position: relative;
+    }
+
+    #refresh {
+        bottom: 0px;
+        margin-left: -4%;
+        position: absolute;
+    }
+
+    .div-contact p.submit input.submitfrom {
+        background: none repeat scroll 0 0 #005e99;
+        border: medium none;
+        color: #fff;
+        display: inline-block;
+        float: right;
+        font: bold 12px/20px Arial,sans-serif;
+        margin-top: -40px;
+        padding-left: 0;
+        position: absolute;
+        right: 3%;
+        text-align: center;
+        text-transform: uppercase;
+        width: 10%;
+        left: auto;
+    }
+
+}
+/*****style list video*****/
+.classvideo{
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #EBF1F5 none repeat scroll 0px 0px;
+}

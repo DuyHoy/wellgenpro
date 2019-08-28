@@ -1,0 +1,205 @@
+
+.content-home > a {
+    float: left;
+    height: 220px;
+    position: relative;
+    width: 100%;
+}
+.content-home a img {
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+}
+
+.content-home ul .imageclass, .content-home ul .block {
+    display: none;
+}
+.content-home ul {
+    background: none repeat scroll 0 0 #e9f2f7;
+    float: left;
+    padding-top: 37px;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 10px;
+
+}
+.content-home ul li {
+    border-bottom: 1px dotted grey;
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+.content-home ul li h3 {
+    float: left;
+    margin: 0 2%;
+    width: 97%;
+    overflow: hidden;
+}
+
+.content-home li span.glyphicon-chevron-right {
+    background: none repeat scroll 0 0 #ddd;
+    color: #88898a;
+    position: absolute;
+    right: -10%;
+    top: 10px;
+    padding: 1%;
+}
+.content-home ul li h3 a {
+    color: #000;
+    float: left;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 3%;
+    text-align: right;
+    width: 87%;
+    position: relative;
+}
+.content-home ul li h3 a:hover {
+    color: #0c81c9;
+    text-decoration: none;
+}
+.content-home li span.glyphicon-chevron-right:hover {
+    background: none repeat scroll 0 0 #0c81c9;
+    color: #fff;
+}
+.content-home ul li:hover {
+    border-bottom: 1px dotted #0c81c9;
+}
+
+.content-home .titlehomeclass {
+    margin-top: 27px;
+    background: #0c81c9;
+    left: 41%;
+}
+
+.content-newscategory h2 {
+    background: url(../image/backgroundtitle.png) no-repeat;
+    /*background-size: 40%;*/
+    font-size: 29px;
+    padding: 3px 0 5px 7%;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+.content-newscategory .imageclass {
+    clear: both;
+    float: left;
+    height: 155px;
+    margin-right: 2%;
+    padding-left: 0;
+    position: relative;
+    width: 27%;
+}
+
+.content-newscategory .imageclass img {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.content-newscategory ul {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.content-newscategory li {
+    clear: both;
+    float: left;
+    margin-bottom: 25px;
+    margin-left: 0;
+    width: 100%;
+}
+.content-newscategory .div-right {
+    float: right;
+    width: 70%;
+}
+.content-newscategory .div-right a:first-child {
+    color: #333333;
+    float: left;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-transform: uppercase;
+    width: 100%;
+}
+.content-newscategory .div-right a:first-child:hover {
+    color: #0c81c9;
+    text-decoration: none;
+}
+.content-newscategory .div-right p {
+    float: left;
+    line-height: 20px;
+    max-height: 80px;
+    overflow: hidden;
+    text-align: justify;
+    width: 100%;
+}
+.content-newscategory .div-right a.seemoreclass {
+    text-transform: none;
+    font-size: 16px;
+    color: #fff;
+    background: #0c81c9;
+    padding: 5px 2%; 
+}
+
+.content-newscategory .div-right a.seemoreclass:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media only screen and (max-width: 768px)  {
+
+    .content-newscategory .imageclass {
+        clear: both;
+        float: left;
+        height: 90px;
+        margin-right: 2%;
+        padding-left: 0;
+        position: relative;
+        width: 27%;
+    }
+
+    .content-newscategory .div-right p {
+        float: left;
+        line-height: 20px;
+        max-height: 40px;
+        overflow: hidden;
+        text-align: justify;
+        width: 100%;
+    }
+
+}
+
+.content-wrapper {
+    margin-top: 15px;
+}
+
+.content-newscategory {
+    float: left;
+    clear: both;
+}
+.content-newscategory .glyphicon {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px)  {
+
+    .content-newscategory h2 {
+        background: url(../image/backgroundtitle.png) no-repeat;
+        /*background-size: 55% !important;*/
+        font-size: 29px;
+        padding: 3px 0 5px 45px !important;
+        color: #fff;
+        margin: 10px 0 10px 0;
+    }
+}
+/*****style list video*****/
+.classvideo{
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #EBF1F5 none repeat scroll 0px 0px;
+}
