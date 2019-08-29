@@ -3,13 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <title>Khóa học</title>
-      <meta name="description" content="Wellgen Việt Nam là đối tác tại Việt Nam của Trung tâm ADRC nguyên cứu \"Sinh Trắc Học Dấu Vân Tay\" châu Á.Chúng tôi ứng dụng khoa học \"Sinh trắc học Dấu Vân Tay\" trong việc tư vấn, định hướng giáo dục, phân tích tâm lý, khám phá bản thân, định hướng nghề nghiệp giúp cộng đồng người Việt phát huy tối đa năng lực bản thân." />
-      <meta name="keywords" content="Sinh trắc dấu vân tay, Vân tay học, dấu vân tay, tư vấn giáo dục, định hướng nghề nghiệp, sàng lọc nhân sự, khoa học vân tay, khám phá tiềm năng não bộ" />
-      <meta property="og:description" content="" />
-      <meta property="og:image" content="">
-      <meta property="og:url" content="" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta name="revisit-after" content="3 days">
       <link rel="icon"  type="image/png"   href="" />
       <link rel="stylesheet" href="http://wellgen.vn/template/frontend/pc/css/reset-min.css">
       <link rel="stylesheet" href="http://wellgen.vn/template/frontend/pc/css/bootstrap.min.css">
@@ -27,7 +21,7 @@
       <style type="text/css">.logo-container {  background: url('http://wellgen.vn/assets/image/logo/original/wellgen-logo-v2-png_1441701176.png')  !important ;  width: 315px !important ; height: 99px !important  ;   }   </style>
    </head>
    <body>
-      <script>
+      {{-- <script>
          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -36,7 +30,7 @@
          ga('create', 'UA-70478340-1', 'auto');
          ga('send', 'pageview');
          
-      </script> 
+      </script>  --}}
       <!-- MENU FOR XS AND SM -->
       <div class="navmenu navmenu-default navmenu-fixed-right offcanvas hidden-lg hidden-md">
          <a class="navmenu-brand" href="#">Menu</a>  
@@ -577,7 +571,7 @@
    </body>
    <script type="text/javascript"></script>
 </html>
-<script type="text/javascript">
+{{-- <script type="text/javascript">
    var xmlhttp;
    if (window.XMLHttpRequest)
      {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -589,4 +583,4 @@
      }
    xmlhttp.open("POST","http://wellgen.vn/adminstat/index/clientstat/1/screenwidth/"+window.screen.availWidth+"/screenheight/"+window.screen.availHeight,true);
    xmlhttp.send();
-</script>
+</script> --}}
