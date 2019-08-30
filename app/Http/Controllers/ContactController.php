@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App;
-class CategoriesController extends Controller
+ 
+use App\Contacts;
+
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +15,10 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        //
-        $categories =App\Categories::all();
-        return view('admin.allcategories',compact('categories'));
+        // //
+        // $contacts=Contacts::all();
+        // return view('contact.index')->with('contacts',$contacts);
+         
     }
 
     /**
@@ -25,9 +28,7 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        //
-        $categories =App\Categories::all();
-        return view('admin.createcategories',compact('categories'));
+        return view('contact.create');
     }
 
     /**
@@ -39,6 +40,21 @@ class CategoriesController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request, [
+            'text' => 'required'
+          ]);
+  
+          // Create contact
+          $contacts = new Contacts;
+          $contacts->name = $request->input('name');
+          $contacts->email = $request->input('email');
+          $contacts->tieude = $request->input('tieude');
+          $contacts->noidung = $request->input('noidung');
+         
+  
+          $contacts->save();
+  
+        //   return redirect('/')->with('success', 'Todo Created');
     }
 
     /**
@@ -50,9 +66,6 @@ class CategoriesController extends Controller
     public function show($id)
     {
         //
-        $category =App\Categories::findOrFail($id);
-        return view('admin.editCategories',compact('category'));
-        
     }
 
     /**

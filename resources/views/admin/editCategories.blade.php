@@ -125,7 +125,7 @@
         <div class="col-lg-12">
           <div class="card">
             <div class="card-header d-flex align-items-center">
-              <h4>Tạo Bài Viết Mới</h4>
+              <h4>Sửa Thể Loại</h4>
             </div>
             <div class="card-body">
               <form class="form-horizontal">
@@ -133,24 +133,20 @@
              
                   <div class="col-sm-10">
                     <div class="form-group-material">
-                      <input id="register-username" type="text" name="registerUsername" required="" class="input-material">
-                      <label for="register-username" class="label-material">Tiêu Đề</label>
+                    <input id="register-username" type="text" name="registerUsername" required="" class="input-material" value={{$category->name}}>
+                      <label for="register-username" class="label-material">Name Categories</label>
                     </div>
                     <div class="form-group-material">
-                        <input id="register-username" type="text" name="registerUsername" required="" class="input-material">
-                        <label for="register-username" class="label-material">Nội dung</label>
+                        {{-- <label for="register-username" class="label-material">Nội dung</label> --}}
+                      
                     </div>
                     <div class="line"></div>
                     <div class="form-group row">
-                        <label class="col-sm-2 form-control-label">Thể Loại</label>
-                        <div class="col-sm-10 mb-3">
+                        {{-- <label class="col-sm-2 form-control-label">Thể Loại</label> --}}
+                        {{-- <div class="col-sm-10 mb-3">
                           <select name="account" class="form-control">
-                            <option>option 1</option>
-                            <option>option 2</option>
-                            <option>option 3</option>
-                            <option>option 4</option>
                           </select>
-                        </div>
+                        </div> --}}
                       
                       </div>
                   
@@ -158,7 +154,7 @@
                 <div class="form-group row">
                   <div class="col-sm-4 offset-sm-2">
                     <button type="submit" class="btn btn-secondary">Hủy</button>
-                    <button type="submit" class="btn btn-primary">Tạo</button>
+                    <button type="submit" class="btn btn-primary">Sửa</button>
                   </div>
                 </div>
               </form>

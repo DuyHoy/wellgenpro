@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class NewsArticlesController extends Controller
+use App;
+class PostsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class NewsArticlesController extends Controller
     public function index()
     {
         //
-        return view('admin.allarticles');
+        $allarticles=App\Posts::all();
+        return view('admin.allarticles',compact('allarticles'));
        
     }
 
@@ -26,7 +27,8 @@ class NewsArticlesController extends Controller
     public function create()
     {
         //
-        return view('admin.create');
+        $categories=App\Categories::all();
+        return view('admin.createPosts',compact('categories'));
     }
 
     /**
@@ -49,6 +51,8 @@ class NewsArticlesController extends Controller
     public function show($id)
     {
         //
+        $Posts=App\Posts::findOrFail($id);
+        return view('admin.editPosts',compact('Posts'));
     }
 
     /**

@@ -348,7 +348,7 @@
                      </div>
                      <div class="row">
                         <div class='div-contact' >
-                           <form method='post' action='' onSubmit = '{return false;};'  class='formcontact' id='formcontact' >
+                           {{-- <form method='post' action='' onSubmit = '{return false;};'  class='formcontact' id='formcontact' >
                               <p><input type="text" name="title"  placeholder="Vui lòng nhập tên của bạn" /></p>
                               <p><input type="text" name="email" class="validate[required,custom[email]] text-input" placeholder="Vui lòng nhập địa chỉ email" /></p>
                               <p><input type="text" name="subject" class="validate[required] text-input" placeholder="Vui lòng nhập tiêu đề" /></p>
@@ -356,7 +356,10 @@
                               <img src="http://wellgen.vn/library/external/captchar/get_captcha.php" alt="" id="captcha" /><input style="width:200px;" name="code" type="text" id="code"><img src="http://wellgen.vn/library/external/captchar/refresh.png" width="25" alt="" id="refresh" />
                               <p class="submit"><input type="submit" value="Gửi" name="btnsubmit" class="submitfrom" /></p>
                               <p class="errorclass"></p>
-                           </form>
+                           </form> --}}
+
+                        @yield('content')
+
                         </div>
                         <link type="text/css" href="http://wellgen.vn/template/backend/default/css/validationEngine.jquery.css"  rel="stylesheet"/>
                         <script type="text/javascript" src="http://wellgen.vn/template/backend/default/js/jquery.validationEngine-vi.js"></script>  

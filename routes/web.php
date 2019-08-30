@@ -50,5 +50,10 @@
 // Route::get('/admin/delete', function () {
 //     return view('admin.delete');
 // });
-Route::resource('posts', 'NewsArticlesController');
+
+Route::resource('posts', 'PostsController');
 Route::resource('category', 'CategoriesController');
+
+
+// Route::get('/create','ContactController@create');
+// Route::resource('contact', 'ContactController');

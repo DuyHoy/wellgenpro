@@ -125,7 +125,7 @@
         <div class="col-lg-12">
           <div class="card">
             <div class="card-header d-flex align-items-center">
-              <h4>Tạo Thể Loại Mới</h4>
+              <h4>Tạo Bài Viết Mới</h4>
             </div>
             <div class="card-body">
               <form class="form-horizontal">
@@ -133,20 +133,25 @@
              
                   <div class="col-sm-10">
                     <div class="form-group-material">
-                      <input id="register-username" type="text" name="registerUsername" required="" class="input-material">
-                      <label for="register-username" class="label-material">Name Categories</label>
+                      <input id="register-username" type="text" name="registerUsername" required="" class="input-material" value={{$Posts->title}}>
+                      <label for="register-username" class="label-material">Tiêu Đề</label>
                     </div>
                     <div class="form-group-material">
-                        {{-- <label for="register-username" class="label-material">Nội dung</label> --}}
-                      
+                         
+                        <label for="register-username" class="label-material">Nội dung</label>
+                    <textarea id="mytextarea" name="mytextarea">{{$Posts->content}}</textarea>
                     </div>
                     <div class="line"></div>
                     <div class="form-group row">
-                        {{-- <label class="col-sm-2 form-control-label">Thể Loại</label> --}}
-                        {{-- <div class="col-sm-10 mb-3">
+                        <label class="col-sm-2 form-control-label">Thể Loại</label>
+                        <div class="col-sm-10 mb-3">
                           <select name="account" class="form-control">
+                           
+                           {{-- @foreach ($categories as $category)
+                           <option>{{$category->name}}</option>
+                           @endforeach --}}
                           </select>
-                        </div> --}}
+                        </div>
                       
                       </div>
                   
