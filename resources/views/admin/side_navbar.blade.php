@@ -12,13 +12,15 @@
       <!-- Sidebar Navigation Menus-->
       <div class="main-menu">
         <h5 class="sidenav-heading">Main</h5>
-        <ul id="side-main-menu" class="side-menu list-unstyled">                  
-          <li><a href={{url()->current()}}> <i class="icon-home"></i>Tạo Bài Viết                             </a></li>
-          <li><a href={{url('admin/delete')}}> <i class="icon-form"></i>Xóa Bài Viết                             </a></li>
-          <li><a href={{url('admin/update')}}> <i class="fa fa-bar-chart"></i>Sửa Bài Viết                             </a></li>
-          <li><a href={{url('admin/update')}}> <i class="fa fa-bar-chart"></i>Thêm Thể Loại                             </a></li>
-          <li><a href={{url('admin/update')}}> <i class="fa fa-bar-chart"></i>Sửa Thể Loại                             </a></li>
-          <li><a href={{url('admin/update')}}> <i class="fa fa-bar-chart"></i>Xóa Thể Loại                             </a></li>
+        <ul id="side-main-menu" class="side-menu list-unstyled">
+            <li><a href={{url('posts')}}> <i class="fa fa-bar-chart"></i>Danh Sách Bài Viết                              </a></li>                  
+          <li><a href={{url('posts/create')}}> <i class="icon-home"></i>Tạo Bài Viết                             </a></li>
+          {{-- <li><a href={{url('admin/delete')}}> <i class="icon-form"></i>Xóa Bài Viết                             </a></li> --}}
+          {{-- <li><a href={{url('admin/update')}}> <i class="fa fa-bar-chart"></i>Sửa Bài Viết                             </a></li> --}}
+          <li><a href={{url('category')}}> <i class="fa fa-bar-chart"></i>Danh Sách Thể Loại                             </a></li>
+          <li><a href={{url('category/create')}}> <i class="fa fa-bar-chart"></i>Thêm Thể Loại                             </a></li>
+          {{-- <li><a href={{url('admin/update')}}> <i class="fa fa-bar-chart"></i>Sửa Thể Loại                             </a></li>
+          <li><a href={{url('admin/update')}}> <i class="fa fa-bar-chart"></i>Xóa Thể Loại                             </a></li> --}}
           {{-- <li><a href="tables.html"> <i class="icon-grid"></i>Xóa Bài Viết                             </a></li> --}}
        
         </ul>

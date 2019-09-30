@@ -12,4 +12,9 @@ class Posts extends Model
     {
         return $this->belongsTo(Categories::class,'categories_id');
     }
+    public function images()
+    {
+        return $this->hasMany(Posts::class);
+      
+    }
 }

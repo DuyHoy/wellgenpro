@@ -16,16 +16,27 @@
                       <th>Title</th>
                       <th>Content</th>
                       <th>Categories</th>
+                   <th>Thao Tác</th>
                     </tr>
                   </thead>
+                  
                   <tbody>
     
-                    @foreach ($allarticles as $article)
+                    @foreach ($allposts as $post)
                         <tr>
-                        <th scope="row">{{$article->id}}</th>
-                      <td>{{$article->title}}</td>
-                      <td>{{$article->content}}</td>
-                      <td>{{$article->categories_id}}</td>
+                        <th scope="row">{{$post->id}}</th>
+                      <td><h3 style="">{!!$post->title!!}</h3></td>
+                      <td >{!!substr(strip_tags($post->content),0,500)!!}</td>
+                      <td >{{$post->category['name']}}</td>
+                      <td >
+                
+                        <a href={{url('posts',$id=$post->id)}} class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        <span><strong>Edit</strong></span>            
+    </a>
+  
+           
+                  </td>
                     </tr>
                     @endforeach
                     

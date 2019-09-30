@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App;
+use Intervention\Image\Facades\Image as Image;
 class PostsController extends Controller
 {
     /**
@@ -11,11 +12,17 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         //
-        $allarticles=App\Posts::all();
-        return view('admin.allarticles',compact('allarticles'));
+        $allposts=App\Posts::with('category')->get();
+        // return $allposts;
+        return view('admin.allposts',compact('allposts'));
        
     }
 
@@ -40,6 +47,30 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         //
+        // dd($request->all());
+    $post=new App\Posts();
+    $post->title=request('title');
+    $post->content=request('mytextarea');
+    $post->categories_id=request('categories_id');
+    $post->save();  
+    // return redirect('category');
+
+    if($request->hasFile('images')){
+        $image=$request->file('images');
+        $filename=time().'.'.$image->getClientOriginalExtension();
+        $location= public_path('images/'. $filename);
+        Image::make($image)->resize(800,400)->save($location);
+        // $imageConvert=new App\Images();
+        // $imageConvert->img=$filename;
+        // $imageConvert->posts_id=$post->id;
+        $post->images()->saveMany([
+            new App\Images(['img' => $filename],['posts_id' => $post->id]),
+           
+        ]);
+        // $imageConvert->save();
+    }
+    // $img = Image::make('foo.jpg')->resize(300, 200);
+        return redirect('posts');
     }
 
     /**
@@ -50,9 +81,11 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
-        $Posts=App\Posts::findOrFail($id);
-        return view('admin.editPosts',compact('Posts'));
+       
+        
+        $post=App\Posts::findOrFail($id);
+        $categories =App\Categories::all();
+        return view('admin.editPosts',['post' =>$post,'categories'=>$categories ]);
     }
 
     /**
@@ -76,6 +109,13 @@ class PostsController extends Controller
     public function update(Request $request, $id)
     {
         //
+    // dd($request->all());
+    $post=App\Posts::find($id);
+    $post->title=request('title');
+    $post->content=request('content');
+    $post->categories_id=request('categories_id');
+    $post->save();
+    return redirect('posts');
     }
 
     /**
@@ -87,5 +127,7 @@ class PostsController extends Controller
     public function destroy($id)
     {
         //
+        App\Posts::destroy($id);
+        return redirect('posts');
     }
 }

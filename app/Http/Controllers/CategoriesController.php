@@ -39,6 +39,10 @@ class CategoriesController extends Controller
     public function store(Request $request)
     {
         //
+    $category=new App\Categories();
+    $category->name=request('registerUsername');
+    $category->save();
+    return redirect('category');
     }
 
     /**
@@ -75,7 +79,12 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // dd($request->all());
         //
+    $category=App\Categories::find($id);
+    $category->name=request('registerUsername');
+    $category->save();
+    return redirect('category');
     }
 
     /**
@@ -84,8 +93,14 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+{
+    $this->middleware('auth');
+}
     public function destroy($id)
     {
         //
+        App\Categories::destroy($id);
+        return redirect('category');
     }
 }
